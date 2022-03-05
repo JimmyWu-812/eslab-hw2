@@ -140,7 +140,7 @@ public:
             (float)((int)(y*10000))/10000, (float)((int)(z*10000))/10000, sample_num);
             response = _socket.send(acc_json,len);
             if (0 >= response){
-            printf("Error sending: %d\n", response);
+                printf("Error sending: %d\n", response);
             }
             ThisThread::sleep_for(100);
         }
